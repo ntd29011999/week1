@@ -8,12 +8,23 @@
     tools:context=".MainActivity">
 
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpButton"
+        app:srcCompat="@drawable/line" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
         android:layout_marginStart="48dp"
+        android:textColor="@color/black"
         android:text="Sign Up"
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,23 +42,24 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="20dp"
         android:text="Full name"
-        android:textSize="20sp"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-
-        android:layout_width="324dp"
+        android:layout_width="340dp"
         android:layout_height="54dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="4dp"
+        android:background="@drawable/drawable_shape"
         android:ems="10"
         android:inputType="textPersonName"
+        android:paddingLeft="10dp"
         android:selectAllOnFocus="false"
         android:singleLine="true"
         android:text="Arlene Mccoy"
-        android:textSize="25sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -58,20 +70,23 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="20dp"
         android:text="E-mail"
-        android:textSize="20sp"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="324dp"
-        android:layout_height="51dp"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="4dp"
+        android:background="@drawable/drawable_shape"
         android:ems="10"
         android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:text="Preelookstudio@gmail.com"
-        android:textSize="25sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -82,18 +97,22 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="20dp"
         android:text="Password"
-        android:textSize="20sp"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="324dp"
+        android:layout_width="340dp"
         android:layout_height="54dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="4dp"
+        android:background="@drawable/drawable_shape"
         android:ems="10"
         android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="123456"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -108,7 +127,7 @@
         android:gravity="center"
         android:text="SIGN UP"
         android:textColor="#FFFFFF"
-        android:textSize="25sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
@@ -152,7 +171,7 @@
         android:layout_height="53dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="80dp"
-
+        android:drawableLeft="@drawable/facebook"
         android:backgroundTint="@color/white"
         android:text="Facebook"
         android:textColor="@color/black"
@@ -165,8 +184,9 @@
         android:layout_width="150dp"
         android:layout_height="53dp"
         android:layout_marginTop="80dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="32dp"
         android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/search"
         android:text="Google"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -203,5 +223,15 @@
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:srcCompat="@drawable/hinhtron3" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpButton"
+        app:srcCompat="@drawable/line" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
